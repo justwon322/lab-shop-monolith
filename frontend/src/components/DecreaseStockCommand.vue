@@ -6,7 +6,6 @@
         </v-card-title>
 
         <v-card-text>
-            <String label="Name" v-model="value.name" :editMode="editMode"/>
             <Number label="Qty" v-model="value.qty" :editMode="editMode"/>
         </v-card-text>
 
@@ -43,7 +42,6 @@
             value: {},
         }),
         created() {
-            this.value.name = '';
             this.value.qty = 0;
         },
         watch: {
